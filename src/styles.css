@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0px !important;
+}
+@import url('assets/admin/css/styles.css');
+@import url('assets/admin/js/datatables-simple-demo.js');
+@import url('assets/admin/js/scripts.js');

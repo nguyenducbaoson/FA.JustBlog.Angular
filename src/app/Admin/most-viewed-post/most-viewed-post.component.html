@@ -1,0 +1,44 @@
+<app-search-bar></app-search-bar>
+  <body class="sb-nav-fixed">
+    <div id="layoutSidenav">
+      <app-menu></app-menu>
+      <div id="layoutSidenav_content">
+          <main>
+              <div class="container-fluid px-4">
+                  <h1 class="mt-4">Most Viewed Posts</h1>
+                  <div class="row" pb-2>
+                    <div class="col">
+                    </div>
+                    <!-- <div class="col text-end pt-1">
+                        <a  class="btn btn-outline-primary"><i class="bi bi-plus-square-fill"></i>Create New Post</a>
+                    </div> -->
+                    <table class="table">
+                      <thead>
+                          <tr>
+                              <th>Title</th>
+                              <th>Category</th>
+                              <th>ShortDecription</th>
+                              <th>PostContent</th>
+                              <th>Tags</th>
+                          </tr>
+                      </thead>
+                      <tbody *ngFor="let item of posts">
+                      <tr>
+                        <td>{{item.title}}</td>
+                        <td>{{item.categoryName}}</td>
+                        <td>{{item.shortDecription}}</td>
+                        <td>{{item.PostContent}}</td>
+                        <td>{{item.tagName}}</td>
+                        <td>
+                            <a class="btn btn-outline-success"><i class="bi bi-pencil-square"></i></a>
+                            <a class="btn btn-outline-danger"><i class="bi bi-trash-fill"></i></a>
+                        </td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div>
+              </div>
+          </main>
+      </div>
+  </div>
+</body>
